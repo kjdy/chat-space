@@ -1,0 +1,60 @@
+.header
+  .header__logo
+    グループを作成しました
+.contents
+  .side-bar
+    .menus
+      .menu
+        .menu__user
+          user-name
+        .menu__icon
+          .menu__icon--edit
+            =link_to do 
+              = fa_icon 'edit'
+              %span<>
+          .menu__icon--cog
+            =link_to do 
+              = fa_icon 'cog'
+              %span<>
+    .groups
+      .group
+        .group__name
+          group-name
+        .group__comments
+          comments
+  .chat
+    .tops
+      .edit
+        .edit__border
+          Edit
+      .top
+        .top__name
+          group-name
+        .top__member
+          members
+      
+    .mains
+      .main
+        .main__user
+          user-name
+        .main__date
+          2019/10/15 07:28:45
+      .comments
+        comments
+    
+    .footer
+      .form
+        .type-box
+          .type-box__text
+            type a message
+            .type-box__border
+          .type-box__image
+            %form{:action => "./filesend.cgi", :enctype => "multipart/form-data", :method => "post"}
+              %label
+                %span.filelabel
+                  = fa_icon 'image'
+                %input#filesend{:name => "datafile", :type => "file"}/
+
+        .sending
+          .sending__border
+            SEND
