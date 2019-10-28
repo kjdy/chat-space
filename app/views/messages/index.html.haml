@@ -6,15 +6,15 @@
     .menus
       .menu
         .menu__user
-          user-name
+          = current_user.name
         .menu__icon
           .menu__icon--edit
-            =link_to do 
-              = fa_icon 'edit'
+            =link_to new_group_path do 
+              = fa_icon 'edit', class: 'icon'
               %span<>
           .menu__icon--cog
-            =link_to do 
-              = fa_icon 'cog'
+            =link_to edit_user_path(current_user) do 
+              = fa_icon 'cog', class: 'icon'
               %span<>
     .groups
       .group
