@@ -1,22 +1,6 @@
-$blue:#38AEF0;
-$white: #FFFFFF;
-.header{
-  height: 20px;
-  width: 100%;
-  background-color: $blue;
-  position: fixed;
-  &__logo{
-    color: #fafafa;
-    text-align: center;
-    line-height: 20px;
-    
-  }
-}
-
 .contents{
   background-color: #fafafa;
-  height: calc(100vh - 20px); 
-  padding-top: 20px;
+  height: calc(100vh); 
   width: 100%;
   .side-bar{
     height: 100%;
@@ -34,7 +18,7 @@ $white: #FFFFFF;
         &__user{
           font-size: 16px;
           font-weight: bold;
-          color: $white;
+          color:#FFFFFF ;
         }
         &__icon{
           display: flex;
@@ -43,13 +27,10 @@ $white: #FFFFFF;
             margin-right: 5px;
           }
           i{
-            color: $white;
+            color: #FFFFFF;
           }
-        }
-        
+        } 
       }
-
-      
     }
     .groups{
       background-color: #2f3e51;
@@ -59,13 +40,13 @@ $white: #FFFFFF;
         &__name{
           font-size: 15px;
           font-weight: bold;
-          color: $white;
+          color: #FFFFFF;
           padding:20px 0px 5px 0px;
         }
         &__comments{
           font-size:11px;
           font-weight: bold;
-          color: $white;
+          color: #FFFFFF;
           padding: 0px 20px 40px 0px;
         }
       }
@@ -83,8 +64,8 @@ $white: #FFFFFF;
       padding-right: 40px;
       .edit{
         padding: 0 20px 0 20px;
-        border: solid 1px $blue;
-        color: $blue;
+        border: solid 1px #38AEF0;
+        color: #38AEF0;
         width: 30px;
         height: 40px;
         line-height: 40px;
@@ -166,9 +147,9 @@ $white: #FFFFFF;
           
         }
         .sending{
-          border: solid 1px $blue;
-          background-color: $blue;
-          color: $white;
+          border: solid 1px #38AEF0;
+          background-color: #38AEF0;
+          color: #FFFFFF;
           height: 50px;
 
           &__border{
