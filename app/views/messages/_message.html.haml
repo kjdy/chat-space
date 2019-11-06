@@ -1,0 +1,11 @@
+.mains
+  .main
+    .main__user
+      = message.user.name
+    .main__date
+      = message.created_at.strftime("%Y/%m/%d %H:%M")
+  .comments
+    - if message.content.present?
+      %p.comments__content
+        = message.content
+    = image_tag message.image.url, class: 'comments__image' if message.image.present?
